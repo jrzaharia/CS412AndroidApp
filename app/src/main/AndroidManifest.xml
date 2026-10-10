@@ -17,6 +17,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:launchMode="singleInstance"
             android:theme="@style/Theme.GreetingCard"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -28,6 +29,8 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi"
             android:windowSoftInputMode="adjustResize"
             android:theme="@style/Theme.GreetingCard.AppCompat">
             <intent-filter>
