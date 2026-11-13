@@ -119,6 +119,13 @@ class MainActivity : ComponentActivity() {
                         }) {
                             Text("Send Broadcast")
                         }
+
+                        Button(onClick = {
+                            val intent = Intent(context, ThirdActivity::class.java)
+                            context.startActivity(intent)
+                        }) {
+                            Text("View Image Activity")
+                        }
                     }
                 }
             }
